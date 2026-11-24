@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Pattern Shield",
+  "version": "0.1.0",
+  "description": "Highlights hidden terms, tiny print, surprise charges, auto-renewals and deceptive design on the page you're viewing. Runs entirely on your device.",
+  "permissions": ["storage"],
+  "action": { "default_popup": "popup.html", "default_title": "Dark Pattern Shield" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+html.dps-on .dps-hl { outline: 3px solid #e5484d !important; outline-offset: 2px !important; border-radius: 3px; }
+html.dps-on .dps-hl.dps-low { outline-color: #3b82f6 !important; }
+html.dps-on .dps-hl.dps-medium { outline-color: #f5a524 !important; }
+html.dps-on .dps-hl.dps-high { outline-color: #e5484d !important; background-color: rgba(229, 72, 77, 0.12) !important; }
+.dps-flash { animation: dpsflash 0.5s ease 3; }
+@keyframes dpsflash { 50% { box-shadow: 0 0 0 8px rgba(229, 72, 77, 0.45); } }
